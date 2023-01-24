@@ -3,10 +3,10 @@ import mongoose from 'mongoose';
 mongoose.set('returnOriginal', false)
 mongoose.set('strictQuery', false);
 
-const url = process.env.MONGO_URL || 'mongodb://localhost:27017/workoutgods'
+const url = process.env.DB_URL || 'mongodb://localhost:27017/workoutgods'
 
 mongoose.connect(url).catch((err) => {
-  console.log(`Error connection to mongodb: ${err.message}`)
+  console.log(`Error connection to MongoDB: ${err.message}`)
 });
 
 mongoose.connection.on('disconnected', () => {
