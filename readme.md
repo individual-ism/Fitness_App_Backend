@@ -10,7 +10,7 @@ This API is a compendium of exercises and exercise records, providing inspiratio
 
 ## Searching with the API
 
-This API can be reached at its primary root at ***https://fitness-app-1114.heroku.com***. It has two primary components: Exercises and Exercise Records. Requests for each should use the following endpoints, with the specific purposes outlined further below:
+This API can be reached at its primary root at ***https://fitness-app-1114.herokuapp.com***. It has two primary components: Exercises and Exercise Records. Requests for each should use the following endpoints, with the specific purposes outlined further below:
 
   - Root: "/"  
   - ID: "/:id"   
@@ -18,15 +18,15 @@ This API can be reached at its primary root at ***https://fitness-app-1114.herok
   ### Retrieving All
   To retrieve all exercises or exercise records, use the base root, followed by "/exercises" or "/exerciserecs", respectively. The URL should reflect one of the following:  
 
-    https://fitness-app-1114.heroku.com/exercises  
-    https://fitness-app-1114.heroku.com/exerciserecs  
+    https://fitness-app-1114.herokuapp.com/exercises  
+    https://fitness-app-1114.herokuapp.com/exerciserecs  
 
 
   ### Retrieving Individual Records
   To retrieve an individual record for a exercise or exercise record, use the respective URL under "Retrieving All" and add the required ObjectID after a forward slash. An example of each has been provided below:  
 
-    https://fitness-app-1114.heroku.com/exercises/63d02535e60689fec33dd428  //Bench Press  
-    https://fitness-app-1114.heroku.com/exerciserecs/63d3c93d67d65f793e9c868e //Bench Press Exercise Record
+    https://fitness-app-1114.herokuapp.com/exercises/63d02535e60689fec33dd428  //Bench Press  
+    https://fitness-app-1114.herokuapp.com/exerciserecs/63d3c93d67d65f793e9c868e //Bench Press Exercise Record
 
 
   ### Creating New Records
@@ -49,7 +49,7 @@ This API can be reached at its primary root at ***https://fitness-app-1114.herok
 ## Technical Requirements
 - Create a functional API utilizing Express and Mongoose, for application with a frontend component
 - Implement full CRUD functionality for each model
-- Deploy the API via Heroku for public accessibility
+- Deploy the API via Herokuapp for public accessibility
 
 ## Notes & Issues
 - All testing of the API for access - both prior to and following deployment - was conducted utilizing Google Chrome.
@@ -60,7 +60,7 @@ This API can be reached at its primary root at ***https://fitness-app-1114.herok
 2. Add authentication and authorization.
 
 
-[backend_deployment]: https://fitness-app-1114.heroku.com
+[backend_deployment]: https://fitness-app-1114.herokuapp.com
 [frontend_deployment]: https://reposfit.netlify.com
 [frontend_repository]: https://github.com/Kan5661/unit-3
 [models]: https://github.com/individual-ism/ReposFit_Backend/tree/main/models
